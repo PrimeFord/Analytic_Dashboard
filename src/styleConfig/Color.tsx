@@ -1,6 +1,6 @@
 export const colors = {
-  mainBgColor: "#FDFDFD",
-  pryColor: "#BB372F",
+  mainBgColor: "#FAFAFA",
+  pryColor: "#34CAA5",
   textColor: "#26282C",
   secBgColor: "#3E2F8A14",
   secColor: "#3A3F51",

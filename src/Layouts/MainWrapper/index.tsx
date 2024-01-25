@@ -10,7 +10,13 @@ const MainWrapper = ({ children }: IMainWrapper) => {
     <>
       <Flex height={"100vh"} position={"fixed"} w={"100%"}>
         <SideBar />
-        <Box w={"100%"} overflowY={"auto"} p={"2rem"}>
+        <Box
+          bg={"mainBgColor"}
+          w={"100%"}
+          overflowY={"auto"}
+          height={"100vh"}
+          p={"1.5rem"}
+        >
           {children}
         </Box>
       </Flex>
