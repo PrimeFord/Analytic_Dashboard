@@ -12,6 +12,7 @@ const SideBar = () => {
       bg={"#F7F8FA"}
       gap={"1rem"}
       h={"100%"}
+      borderRight={"1px solid #E5EAEF"}
     >
       <Box>
         <Button bg={"none"} h={"fit"} padding={2} _hover={{ bg: "none" }}>
