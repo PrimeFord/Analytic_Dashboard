@@ -8,13 +8,13 @@ const NavBar = () => {
       <nav>
         <Flex
           h={"4.5rem"}
-          gap={"2rem"}
+          gap={"1.5rem"}
           alignItems={"center"}
           justifyContent={"space-between"}
           p={"1.5rem"}
           borderBottom={"1px solid #E5EAEF"}
         >
-          <Text w={"26rem"} fontWeight={600}>
+          <Text w={"20rem"} fontWeight={600}>
             Dashboard
           </Text>
           <SearchComponent />
