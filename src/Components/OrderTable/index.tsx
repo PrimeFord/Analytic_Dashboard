@@ -9,9 +9,12 @@ import {
   Th,
   Thead,
   Tr,
+  useColorModeValue,
 } from "@chakra-ui/react";
 
 const OrderTable = () => {
+  const img = useColorModeValue("file", "file-dark");
+
   const tableHeaders = ["Name", "Date", "Amount", "Status", "Invoice"];
   const tableData = [
     {
@@ -87,13 +90,17 @@ const OrderTable = () => {
                     {item.name}
                   </Flex>
                 </Td>
-                <Td fontWeight="400" fontSize={"13px"}>
+                <Td fontWeight="400" color="#737373" fontSize={"13px"}>
                   {item.date}
                 </Td>
                 <Td fontSize={"13px"} fontWeight="400">
                   ${item.amount}
                 </Td>
-                <Td fontSize={"13px"} fontWeight="400">
+                <Td
+                  fontSize={"13px"}
+                  color={item.status === "Paid" ? "#34CAA5" : "#ED544E"}
+                  fontWeight="400"
+                >
                   {item.status}
                 </Td>
                 <Td h={"100%"} fontSize={"13px"}>
@@ -102,7 +109,7 @@ const OrderTable = () => {
                       <Image
                         h={".85rem"}
                         w={".85rem"}
-                        src={"/Images/file.svg"}
+                        src={`/Images/${img}.svg`}
                         alt="view"
                       />
                       view

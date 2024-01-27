@@ -1,0 +1,60 @@
+.labl {
+  width: 2rem;
+  height: 4rem;
+  position: relative;
+  display: block;
+  background: #fff;
+  border-radius: 2rem;
+  box-shadow: inset 0rem 0.05rem 0.15rem rgba(0, 0, 0, 0.4),
+    inset 0px -0.05rem 0.15rem rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.labl:after {
+  content: "";
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  top: 0.1rem;
+  left: 0.1rem;
+  background: linear-gradient(180deg, #34caa5, #34caa5);
+  border-radius: 1.8rem;
+  box-shadow: 0rem 0.05rem 0.1rem rgba(0, 0, 0, 0.2);
+}
+
+#darkmode_toggle {
+  width: 0;
+  height: 0;
+  display: hidden;
+}
+#darkmode_toggle:checked + .labl {
+  background: #737373;
+}
+#darkmode_toggle:checked + .labl:after {
+  top: 3.9rem;
+  transform: translateY(-100%);
+  background: linear-gradient(180deg, #0d062d, #0d062d);
+}
+.labl,
+.labl:after {
+  transition: 0.3s;
+}
+.labl:active:after {
+  height: 2.1rem;
+}
+.labl img {
+  position: absolute;
+  width: 1.2rem;
+  z-index: 50;
+}
+.labl img.sun {
+  top: 0.4rem;
+  left: 0.4rem;
+  transition: 0.3s;
+}
+.labl img.moon {
+  right: 0.4rem;
+  bottom: 0.4rem;
+  transition: 0.3s;
+}

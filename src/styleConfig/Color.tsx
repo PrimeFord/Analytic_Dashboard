@@ -2,7 +2,7 @@ export const colors = {
   mainBgColor: "#FAFAFA",
   pryColor: "#34CAA5",
   textColor: "#26282C",
-  secBgColor: "#3E2F8A14",
+  secBgColor: "#525252",
   secColor: "#3A3F51",
   white: "#ffffff",
   error: "#FF1F7D",
