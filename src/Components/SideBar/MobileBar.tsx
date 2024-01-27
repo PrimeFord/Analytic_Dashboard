@@ -20,7 +20,7 @@ const MobileBar = () => {
 
   return (
     <Flex
-      w={"5rem"}
+      w={"4rem"}
       display={["flex", "none"]}
       flexDir={"column"}
       alignItems={"center"}
@@ -47,6 +47,8 @@ const MobileBar = () => {
                     position: "absolute",
                     bottom: "22%",
                     right: "-0.7rem",
+                    transition: "ease-in-out",
+                    transitionDuration: "0.6s",
                     height: "1.3rem",
                     width: "4px",
                     borderLeftRadius: "20rem",
@@ -59,6 +61,8 @@ const MobileBar = () => {
             <Image
               textColor={"#0D062D"}
               height={"1.4rem"}
+              transition={"ease-in-out"}
+              transitionDuration={"0.7s"}
               src={`./Images/${active !== id ? icon.light : icon.dark}.svg`}
               alt={icon.light}
             />

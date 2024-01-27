@@ -14,11 +14,12 @@ import { useState } from "react";
 import MobileBar from "../SideBar/MobileBar";
 // import MobileBar from "../SideBar/MobileBar";
 
-const NavBar = ({ setSshow }: any) => {
+const NavBar = () => {
   const [show, setShow] = useState(false);
   // const { isOpen, onToggle } = useDisclosure();
   const bg = useColorModeValue("mainBgColor", "secBgColor");
   const img = useColorModeValue("notification", "notification-dark");
+  const hover = useColorModeValue("#F5F5F5", "#B2ABAB");
 
   return (
     <Box position={"fixed"} w={["100%", "95%"]} zIndex={8} bg={bg}>
@@ -52,7 +53,6 @@ const NavBar = ({ setSshow }: any) => {
               mr={2}
               onClick={() => {
                 setShow(!show);
-                setSshow(show);
               }}
             >
               <Image height={"2.5rem"} src="./Images/vector.svg" />
@@ -74,14 +74,14 @@ const NavBar = ({ setSshow }: any) => {
             mr={[2, 0]}
             rounded={"50%"}
             border={"1px solid #E5EAEF"}
-            _hover={{ bg: "#F5F5F5" }}
+            _hover={{ bg: hover }}
             cursor={"pointer"}
           >
-            <Image w={["1.8rem", "1.2rem"]} src={`/Images/${img}.svg`} />
+            <Image w={["2.4rem", "1.2rem"]} src={`/Images/${img}.svg`} />
           </Box>
           <Box
             h={"fit"}
-            w={["6rem", "14rem"]}
+            w={["8rem", "14rem"]}
             px={2}
             py={1}
             display={"flex"}
@@ -91,7 +91,7 @@ const NavBar = ({ setSshow }: any) => {
             border={"1px solid #E5EAEF"}
             cursor={"pointer"}
           >
-            <Image w={["2rem", "2.4rem"]} src="/Images/profile.png" />
+            <Image w={["1.8rem", "2.4rem"]} src="/Images/profile.png" />
             <Box display={["none", "block"]}>
               <Text fontSize={"1rem"} fontWeight={400}>
                 Justin Bergson

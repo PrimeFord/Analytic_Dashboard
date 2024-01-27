@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   Flex,
   Grid,
   GridItem,
@@ -14,6 +15,7 @@ import OrderTable from "./Components/OrderTable";
 import ExpensesCard from "./Components/ExpensesCard";
 import Platform from "./Components/Platform";
 import SearchComponent from "./Components/SearchComponent";
+import BarChart from "./Components/BarChart";
 
 function App() {
   const bg = useColorModeValue("white", "#212121");
@@ -92,7 +94,6 @@ function App() {
   return (
     <>
       <MainWrapper>
-        {/* <Text h={"200vh"}>Click on the Vite and React logos to learn more</Text> */}
         <Flex
           height={"100%"}
           flexDir={["column", "row"]}
@@ -111,26 +112,49 @@ function App() {
           >
             <Box
               width={"100%"}
+              display={"flex"}
+              flexDir={"column"}
               height={"48%"}
+              gap={2}
               bg={bg}
               rounded={"14px"}
               border={"1px solid #EDF2F7"}
               padding={3}
             >
-              <Flex>
-                <Text fontWeight={500}>Sales Trend</Text>
-                <Flex>
-                  <Text fontWeight={400} fontSize={"0.9rem"}>
+              <Flex justifyContent={"space-between"} h={"1.8rem"}>
+                <Text fontWeight={600}>Sales Trends</Text>
+                <Flex alignItems={"center"}>
+                  <Text
+                    // w={"6rem"}
+                    mr={3}
+                    fontWeight={400}
+                    fontSize={"0.9rem"}
+                  >
                     Short by:
                   </Text>
 
-                  <Select placeholder="Select option">
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
-                  </Select>
+                  <Button
+                    bg={"none"}
+                    fontSize={"0.9rem"}
+                    rounded={"16px"}
+                    fontWeight={300}
+                    _active={{ bg: "none" }}
+                    p={3}
+                    border={"1px solid #E1DFDF"}
+                    height={"2rem"}
+                  >
+                    <Select
+                      placeholder="Weekly"
+                      variant={"unstyled"}
+                      size={"sm"}
+                    >
+                      <option value="monthly">Monthly</option>
+                      <option value="yearly">Yearly</option>
+                    </Select>
+                  </Button>
                 </Flex>
               </Flex>
+              <BarChart />
             </Box>
             <Box
               bg={bg}
@@ -145,22 +169,22 @@ function App() {
                 justifyContent={"space-between"}
                 mb={"0.85rem"}
               >
-                <Text fontWeight={500}>Last Orders</Text>
+                <Text fontWeight={600}>Last Orders</Text>
                 <Link color={"pryColor"}>See All</Link>
               </Flex>
               <OrderTable />
             </Box>
           </Flex>
           <Flex
-            height={"100%"}
+            height={"fit"}
             width={["100%", "33%"]}
-            gap={"1rem"}
+            gap={"0.6rem"}
             flexDir={"column"}
             justifyContent={"space-between"}
           >
             <Grid
               width={"100%"}
-              height={"48%"}
+              height={"49.5%"}
               templateColumns="repeat(2, 1fr)"
               gap={2}
               // padding={4}
@@ -190,7 +214,7 @@ function App() {
                 justifyContent={"space-between"}
                 mb={"0.85rem"}
               >
-                <Text fontWeight={500}>Top Platform</Text>
+                <Text fontWeight={600}>Top Platform</Text>
                 <Link color={"pryColor"}>See All</Link>
               </Flex>
               {platform.map((e, id) => (
