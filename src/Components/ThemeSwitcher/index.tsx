@@ -2,6 +2,7 @@ import { Box, Image, Input, useColorMode } from "@chakra-ui/react";
 import "./style.css";
 const ThemeSwitcher = () => {
   const { colorMode, toggleColorMode } = useColorMode();
+  console.log(colorMode);
   return (
     <Box className="h-[2.5rem] pt-2 text-center relative items-center justify-center dark:text-[#FBFBFB] hidden">
       {/* {colorMode} */}
