@@ -17,7 +17,6 @@ const ThemeSwitcher = () => {
           className="sun"
           src="./Images/sun.svg"
           alt="sun"
-          // bg={"#34CAA5"}
           height={19.2}
           width={19.2}
         />

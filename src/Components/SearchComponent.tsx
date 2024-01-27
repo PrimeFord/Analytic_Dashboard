@@ -5,7 +5,7 @@ const SearchComponent = () => {
   return (
     <>
       <InputGroup
-        w={["100%", "25%"]}
+        w={["100%"]}
         border={"1px solid #E5EAEF"}
         outline="none"
         rounded="2rem"

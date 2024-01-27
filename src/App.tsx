@@ -4,6 +4,7 @@ import {
   Grid,
   GridItem,
   Link,
+  Select,
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
@@ -12,6 +13,7 @@ import MainWrapper from "./Layouts/MainWrapper";
 import OrderTable from "./Components/OrderTable";
 import ExpensesCard from "./Components/ExpensesCard";
 import Platform from "./Components/Platform";
+import SearchComponent from "./Components/SearchComponent";
 
 function App() {
   const bg = useColorModeValue("white", "#212121");
@@ -97,6 +99,9 @@ function App() {
           justifyContent={"space-between"}
           gap={["1rem", ""]}
         >
+          <Box display={["flex", "none"]}>
+            <SearchComponent />
+          </Box>
           <Flex
             height={"100%"}
             width={["100%", "66%"]}
@@ -112,7 +117,20 @@ function App() {
               border={"1px solid #EDF2F7"}
               padding={3}
             >
-              <Text>BAr Chart</Text>
+              <Flex>
+                <Text fontWeight={500}>Sales Trend</Text>
+                <Flex>
+                  <Text fontWeight={400} fontSize={"0.9rem"}>
+                    Short by:
+                  </Text>
+
+                  <Select placeholder="Select option">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                  </Select>
+                </Flex>
+              </Flex>
             </Box>
             <Box
               bg={bg}
