@@ -8,7 +8,7 @@ export const ButtonStyles = {
   sizes: {},
   // styles for different visual variants ("outline", "solid")
   variants: {
-    primary: (props: any) => ({
+    primary: () => ({
       bg: "mainBgColor",
       fontSize: "16px",
       fontWeight: "400",
