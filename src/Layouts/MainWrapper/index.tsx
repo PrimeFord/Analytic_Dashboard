@@ -24,7 +24,7 @@ const MainWrapper = ({ children }: IMainWrapper) => {
 
         <Box bg={bg} w={"100%"} position={"relative"} overflowY={"auto"}>
           <NavBar />
-          <Box p={"1rem"} height={"fit"} pt={"6rem"}>
+          <Box p={"1rem"} overflowX={"hidden"} height={"fit"} pt={"6rem"}>
             {children}
           </Box>
         </Box>
