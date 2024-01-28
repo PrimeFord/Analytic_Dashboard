@@ -176,7 +176,7 @@ function App() {
             </Box>
           </Flex>
           <Flex
-            height={"100%"}
+            height={["fit-content", "100%"]}
             width={["100%", "33%"]}
             gap={"1rem"}
             flexDir={"column"}
@@ -184,7 +184,7 @@ function App() {
           >
             <Grid
               width={"100%"}
-              height={"49%"}
+              height={["fit-content", "48%"]}
               templateColumns="repeat(2, 1fr)"
               gap={2}
               // padding={4}
