@@ -13,7 +13,13 @@ const MainWrapper = ({ children }: IMainWrapper) => {
   const color = useColorModeValue("#26282C", "#FDFDFD");
   return (
     <>
-      <Flex height={"100vh"} color={color} overflowY={"auto"} w={"100%"}>
+      <Flex
+        height={"100vh"}
+        color={color}
+        overflowY={"auto"}
+        overflowX={"hidden"}
+        w={"100%"}
+      >
         <SideBar />
 
         <Box bg={bg} w={"100%"} position={"relative"} overflowY={"auto"}>
