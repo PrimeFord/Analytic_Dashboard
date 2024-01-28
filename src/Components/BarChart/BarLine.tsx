@@ -1,5 +1,5 @@
 import { Box, Text } from "@chakra-ui/react";
-import { useRef, useState } from "react";
+import { useState } from "react";
 
 const BarLine = ({ height, left, label, amount }: any) => {
   const [hover, setHover] = useState(false);

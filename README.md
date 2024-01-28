@@ -29,11 +29,11 @@ Clone or download this repository and run with a local server of open `index.htm
 
 [Preview Here](https://analytic-dashboard-three.vercel.app/)
 
-![screenshot](./public/images/snip.png)
-![screenshot](./public/images/snip2.png)
-![screenshot](./public/images/snip3.png)
-![screenshot](./public/images/snip4.png)
-![screenshot](./public/images/snip5.png)
+![screenshot](./public/Images/snip.png)
+![screenshot](./public/Images/snip2.png)
+![screenshot](./public/Images/snip3.png)
+![screenshot](./public/Images/snip4.png)
+![screenshot](./public/Images/snip5.png)
 
 
 ## Contact
