@@ -37,7 +37,7 @@ const NavBar = () => {
           <Box
             position={"absolute"}
             top={"4.5rem"}
-            // height={"50vh"}
+            height={"80vh"}
             // height={"91.5vh"}
             transition={"ease-in-out"}
             transitionDuration={"0.7s"}
