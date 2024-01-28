@@ -1,6 +1,9 @@
 import { Box, Text } from "@chakra-ui/react";
+import { useRef, useState } from "react";
 
 const BarLine = ({ height, left, label, amount }: any) => {
+  const [hover, setHover] = useState(false);
+
   return (
     <Box
       // display={"flex"}
@@ -13,11 +16,11 @@ const BarLine = ({ height, left, label, amount }: any) => {
       <Box
         position={"absolute"}
         top={"-2.4rem"}
-        right={"-70%"}
+        right={["-100%", "-70%"]}
         textAlign={"center"}
         px={2}
         py={1}
-        display={"none"}
+        opacity={hover ? 1 : 0}
         fontSize={"0.8rem"}
         bg={"#090C2C"}
         color={"#fff"}
@@ -32,9 +35,8 @@ const BarLine = ({ height, left, label, amount }: any) => {
           borderRight: "6px solid transparent",
           borderLeft: "6px solid transparent",
         }}
-        _hover={{ display: "block" }}
       >
-        ${amount}
+        ${amount}.000
       </Box>
       <Box></Box>
       <Box
@@ -48,7 +50,8 @@ const BarLine = ({ height, left, label, amount }: any) => {
           opacity: 1,
           bgGradient: "linear(to-t, transparent, #34CAA5)",
         }}
-        bgGradient="linear(to-t, transparent, #34CAA5)"
+        onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}
       ></Box>
       <Text
         color={"#525252"}

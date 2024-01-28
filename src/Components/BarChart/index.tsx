@@ -4,7 +4,7 @@ import BarLine from "./BarLine";
 const BarChart = () => {
   return (
     <>
-      <Flex h={"17.7rem"} justifyContent={"space-between"}>
+      <Flex h={"17.3rem"} justifyContent={"space-between"}>
         <Box w={"12%"} h={"85%"} textAlign={"center"} position={"relative"}>
           <Text
             color={"#525252"}
@@ -14,8 +14,8 @@ const BarChart = () => {
             opacity={0.5}
             textAlign={"center"}
             position={"absolute"}
-            top={"-0.6rem"}
-            right={"18%"}
+            top={["-0.5rem", "-0.6rem"]}
+            right={["5%", "18%"]}
           >
             50,000
           </Text>
@@ -28,7 +28,7 @@ const BarChart = () => {
             fontWeight={600}
             opacity={0.5}
             top={"1.8rem"}
-            right={"18%"}
+            right={["5%", "18%"]}
           >
             40,000
           </Text>
@@ -41,7 +41,7 @@ const BarChart = () => {
             fontWeight={600}
             opacity={0.5}
             top={"4.4rem"}
-            right={"18%"}
+            right={["5%", "18%"]}
           >
             30,000
           </Text>
@@ -54,7 +54,7 @@ const BarChart = () => {
             fontWeight={600}
             opacity={0.5}
             top={"7.1rem"}
-            right={"18%"}
+            right={["5%", "18%"]}
           >
             20,000
           </Text>
@@ -67,7 +67,7 @@ const BarChart = () => {
             fontWeight={600}
             opacity={0.5}
             bottom={"4rem"}
-            right={"18%"}
+            right={["5%", "18%"]}
           >
             10,000
           </Text>
@@ -80,7 +80,7 @@ const BarChart = () => {
             fontWeight={600}
             opacity={0.5}
             bottom={"1.5rem"}
-            right={"20%"}
+            right={["5%", "18%"]}
           >
             5,000
           </Text>
@@ -92,7 +92,7 @@ const BarChart = () => {
             fontSize={["0.75rem", "0.85rem"]}
             fontWeight={600}
             opacity={0.5}
-            right={"40%"}
+            right={["25%", "40%"]}
             transform={["rotate(330deg)", "rotate(0)"]}
           >
             0

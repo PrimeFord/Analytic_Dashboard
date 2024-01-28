@@ -86,7 +86,7 @@ function App() {
     {
       title: " XStore",
       prog: "23%",
-      color: "#6160DC",
+      color: "#FF4A55",
       amount: "1,000,000",
       perc: "7%",
     },
@@ -176,15 +176,15 @@ function App() {
             </Box>
           </Flex>
           <Flex
-            height={"fit"}
+            height={"100%"}
             width={["100%", "33%"]}
-            gap={"0.6rem"}
+            gap={"1rem"}
             flexDir={"column"}
             justifyContent={"space-between"}
           >
             <Grid
               width={"100%"}
-              height={"49.5%"}
+              height={"49%"}
               templateColumns="repeat(2, 1fr)"
               gap={2}
               // padding={4}
@@ -206,7 +206,7 @@ function App() {
               rounded={"14px"}
               border={"1px solid #EDF2F7"}
               width={"100%"}
-              height={"48%"}
+              height={"49%"}
               padding={4}
             >
               <Flex
@@ -217,16 +217,18 @@ function App() {
                 <Text fontWeight={600}>Top Platform</Text>
                 <Link color={"pryColor"}>See All</Link>
               </Flex>
-              {platform.map((e, id) => (
-                <Platform
-                  key={id}
-                  title={e.title}
-                  prog={e.prog}
-                  color={e.color}
-                  amount={e.amount}
-                  perc={e.perc}
-                />
-              ))}
+              <Flex flexDirection={"column"} gap={3}>
+                {platform.map((e, id) => (
+                  <Platform
+                    key={id}
+                    title={e.title}
+                    prog={e.prog}
+                    color={e.color}
+                    amount={e.amount}
+                    perc={e.perc}
+                  />
+                ))}
+              </Flex>
             </Box>
           </Flex>
         </Flex>

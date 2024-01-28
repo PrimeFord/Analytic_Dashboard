@@ -1,30 +1,47 @@
-# React + TypeScript + Vite
+# Analytic_Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a challenge hosted by Geegpay. it is fully responsive on a mobile phone
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Clone or download this repository and run with a local server of open `index.html` with your favorite browser
 
-## Expanding the ESLint configuration
+## Prequisite
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Your browser version must be recent for a better experience.
 
-- Configure the top-level `parserOptions` property like this:
+## Features
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- Dashboard Page
+- Side Panel
+- Navbar
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Tech/framework used
+
+- HTML
+- CSS
+- ReactJS
+- TypeScript
+- Vite
+- ChakraUI
+
+## Preview
+
+[Preview Here](https://analytic-dashboard-three.vercel.app/)
+
+![screenshot](./public/images/snip.png)
+![screenshot](./public/images/snip2.png)
+![screenshot](./public/images/snip3.png)
+![screenshot](./public/images/snip4.png)
+![screenshot](./public/images/snip5.png)
+
+
+## Contact
+
+If you want to contact me you can reach me at
+-wolabash@gmail.com -https://github.com/PrimeFord
+
+## Addtional Info
+
+- This is one of the series of my projects.
+- This is not meant for production. It's for learning purpose only
